@@ -15,9 +15,14 @@ function light_numbers (num: number) {
         x = num - 16
         y = 1
     } else if (num >= 20 && num < 22) {
-    	
-    } else {
-    	
+        x = 3
+        y = num - 18
+    } else if (num >= 22 && num < 24) {
+        x = 24 - num
+        y = 3
+    } else if (num >= 24 && num < 26) {
+        x = num - 23
+        y = 2
     }
     led.plot(x, y)
 }
